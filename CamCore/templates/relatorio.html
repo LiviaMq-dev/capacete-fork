@@ -3,20 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Relatórios - CamCore</title>
-  <link rel="icon" href="{{url_for('static', filename= 'imagens.img/Logo.png')}}" type="image/png">
+   <link rel="stylesheet" href="relatorio.css"> <!--TEM QUE TIRAR DEPOIS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/relatorio.css') }}">
 </head>
-
 <body>
 
     <header class="navbar">
 
     <div class="logo-area">
-        <img src="{{ url_for('static', filename='imagens.img/Logo.png') }}" class="logo-icon">
-        <span class="logo-text">CamCore</span>
+      <img src="imagens.img/Logo.png" class="logo-icon">
+      <span class="logo-text">CamCore</span>
     </div>
 
     <nav class="menu-desktop" id="menuDesktop">
@@ -24,9 +23,6 @@
         <a href="{{ url_for('logout') }}" class="btn-sair">Sair</a>
     </nav>
 
-    <div class="menu-toggle" id="menuToggle">
-        ☰
-    </div>
 
 </header>
 
